@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Download, ExternalLink, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import MyImage from "./assets/WhatsApp Image 2025-07-05 at 11.53.39_8f9030ea.jpg";
-import resume from "./assets/resume.pdf"
+import resume from "./assets/resume_final.pdf"
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
