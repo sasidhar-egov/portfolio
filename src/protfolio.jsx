@@ -727,7 +727,9 @@ body {
 }
   .about-page{
   width:100%;
-
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
   
   }
 
@@ -738,6 +740,9 @@ body {
   justify-content: center;
   padding: 3rem;
   min-height: calc(100vh - 80px);
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
 }
 
 .hero-section {
@@ -758,6 +763,11 @@ body {
   line-height: 1.2;
 }
 
+.projects-page{
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
+}
 .highlight {
   background: linear-gradient(135deg, #00d4ff, #0099cc);
   -webkit-background-clip: text;
@@ -802,6 +812,11 @@ body {
   flex-wrap: wrap;
 }
 
+.resume-page{
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
+}
 .btn-primary {
   background: linear-gradient(135deg, #00d4ff, #0099cc);
   color: #0a0a0a;
@@ -821,6 +836,11 @@ body {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+.certifications-page{
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
 }
 
 .btn-secondary {
@@ -1047,6 +1067,11 @@ body {
   color: #ffffff;
   font-weight: 500;
   font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+}
+.skills-page{
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
 }
 
 .skill-bar {
@@ -1411,7 +1436,11 @@ body {
     align-items: flex-start;
     gap: 0.5rem;
   }
-
+  .certification-page{
+    @media (max-width: 768px) {
+     margin-top: 10%;
+  }
+  }
   .project-type {
     align-self: flex-start;
   }
@@ -1490,6 +1519,11 @@ body {
 
   .profile-card {
     padding: 1rem;
+  }
+}
+.contact-page{
+  @media (max-width: 768px) {
+    margin-top: 10%;
   }
 }
 
