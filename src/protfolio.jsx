@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ChevronRight, Download, ExternalLink, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Calendar, ExternalLink, Code, Shield, Users, Zap,ChevronRight, Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+
 import MyImage from "./assets/WhatsApp Image 2025-07-05 at 11.53.39_8f9030ea.jpg";
 import resume from "./assets/resume_final.pdf"
 const Portfolio = () => {
@@ -47,6 +48,12 @@ const Portfolio = () => {
             Certifications
           </button>
           <button
+            className={`nav-link ${currentPage === 'experience' ? 'active' : ''}`}
+            onClick={() => navigate('experience')}
+          >
+            Experience
+          </button>
+          <button
             className={`nav-link ${currentPage === 'contact' ? 'active' : ''}`}
             onClick={() => navigate('contact')}
           >
@@ -79,8 +86,9 @@ const Portfolio = () => {
             <div className="hero-skills">
               <span className="skill-tag">React.js</span>
               <span className="skill-tag">Node.js</span>
-              <span className="skill-tag">Spring Boot</span>
               <span className="skill-tag">JavaScript</span>
+              <span className="skill-tag">HTML</span>
+              <span className="skill-tag">Data Structures</span>
               <span className="skill-tag">Python</span>
             </div>
             <div className="hero-buttons">
@@ -615,6 +623,110 @@ const Portfolio = () => {
     </div>
   );
 
+
+  const Experience = () => {
+    const currentDate = new Date();
+    const startDate = new Date('2025-03-01');
+    const monthsDifference = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24 * 30));
+    const duration = monthsDifference < 1 ? 'Present' : `${monthsDifference} months`;
+
+    return (
+      <div className="experience-page page">
+        <div className="container">
+          <h1 className="page-title">Experience</h1>
+
+          <div className="experience-timeline">
+            <div className="experience-item">
+              <div className="experience-header">
+                <div className="experience-title-section">
+                  <h2 className="experience-role">Full-Stack Developer Intern</h2>
+                  <div className="experience-company">
+                    <h3 className="company-name">eGovernments Foundation</h3>
+                    <a
+                      href="https://egov.org.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="company-link"
+                    >
+                      <ExternalLink size={16} />
+                      egov.org.in
+                    </a>
+                  </div>
+                </div>
+
+                <div className="experience-meta">
+                  <div className="experience-duration">
+                    <Calendar size={16} />
+                    <span>March 2025 - Present</span>
+                  </div>
+                  <div className="experience-location">
+                    <MapPin size={16} />
+                    <span>On-Site</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="experience-content">
+                <div className="experience-description">
+                  <div className="responsibility-item">
+                    <div className="responsibility-icon">
+                      <Code size={20} />
+                    </div>
+                    <p>Developing full-stack applications using React.js, Node.js, and Spring Boot.</p>
+                  </div>
+
+                  <div className="responsibility-item">
+                    <div className="responsibility-icon">
+                      <Shield size={20} />
+                    </div>
+                    <p>Building and optimizing RESTful APIs with secure authentication.</p>
+                  </div>
+
+                  <div className="responsibility-item">
+                    <div className="responsibility-icon">
+                      <Zap size={20} />
+                    </div>
+                    <p>Added accessibility features to Digit UI components.</p>
+                  </div>
+
+                  <div className="responsibility-item">
+                    <div className="responsibility-icon">
+                      <Users size={20} />
+                    </div>
+                    <p>Following Agile methodologies for efficient development.</p>
+                  </div>
+                </div>
+
+                <div className="tech-stack">
+                  <h4>Technologies Used:</h4>
+                  <div className="tech-tags">
+                    <span className="tech-tag">React.js</span>
+                    <span className="tech-tag">JavaScript</span>
+                    <span className="tech-tag">HTML</span>
+                    <span className="tech-tag">RESTful APIs</span>
+                    <span className="tech-tag">Authentication</span>
+                    <span className="tech-tag">Accessibility</span>
+                    <span className="tech-tag">Agile</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="experience-summary">
+            <h2>Professional Summary</h2>
+            <p>
+              Currently gaining hands-on experience in full-stack developments. Working with modern web technologies to build
+              scalable and accessible applications while following industry best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+
+
   const renderPage = () => {
     switch (currentPage) {
       case 'home': return <Home />;
@@ -624,6 +736,7 @@ const Portfolio = () => {
       case 'certifications': return <Certifications />;
       case 'contact': return <Contact />;
       case 'resume': return <Resume />;
+      case "experience": return <Experience />
       default: return <Home />;
     }
   };
@@ -1554,6 +1667,297 @@ body {
     border-width: 2px;
   }
 }
+/* Experience Page Styles */
+.experience-page {
+  @media (max-width: 768px) {
+    margin-top: 10%;
+  }
+}
+
+.experience-timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #00d4ff, rgba(0, 212, 255, 0.3));
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 80px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -49px;
+  top: 2rem;
+  width: 20px;
+  height: 20px;
+  background: #00d4ff;
+  border-radius: 50%;
+  border: 4px solid #0a0a0a;
+  z-index: 1;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-title-section {
+  flex: 1;
+}
+
+.experience-role {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00d4ff;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: all 0.3s ease;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.company-link:hover {
+  background: rgba(0, 212, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.experience-duration,
+.experience-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cccccc;
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+  font-weight: 500;
+}
+
+.experience-duration svg,
+.experience-location svg {
+  color: #00d4ff;
+}
+
+.experience-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.responsibility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.responsibility-item:hover {
+  background: rgba(0, 212, 255, 0.03);
+  border-color: rgba(0, 212, 255, 0.2);
+}
+
+.responsibility-icon {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.responsibility-item p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.tech-stack {
+  margin-top: 1rem;
+}
+
+.tech-stack h4 {
+  color: #00d4ff;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  font-weight: 500;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.experience-summary {
+  max-width: 1000px;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.experience-summary h2 {
+  color: #00d4ff;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.experience-summary p {
+  color: #cccccc;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-timeline::before {
+    left: 15px;
+  }
+  
+  .experience-item {
+    padding-left: 60px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-item::before {
+    left: -34px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .experience-meta {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .experience-company {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .responsibility-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .responsibility-icon {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-timeline::before {
+    display: none;
+  }
+  
+  .experience-item {
+    padding-left: 1rem;
+  }
+  
+  .experience-item::before {
+    display: none;
+  }
+}
+
 
 /* Print styles */
 @media print {
