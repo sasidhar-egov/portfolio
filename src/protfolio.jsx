@@ -81,7 +81,7 @@ const Portfolio = () => {
             <p className="hero-subtitle">Full-Stack Developer & Problem Solver</p>
             <p className="hero-description">
               Passionate about creating innovative web solutions with React.js, Node.js, and Spring Boot.
-              Currently working as a Full-Stack Developer Intern at eGovernments Foundation.
+              Currently working as a Full-Stack Developer Intern at eGov Foundation.
             </p>
             <div className="hero-skills">
               <span className="skill-tag">React.js</span>
@@ -122,7 +122,7 @@ const Portfolio = () => {
           <div className="about-text">
             <p className="about-intro">
               I'm a passionate Full-Stack Developer with expertise in modern web technologies.
-              Currently Working as a Full-Stack Developer Intern at eGovernments Foundation.
+              Currently Working as a Full-Stack Developer Intern at eGov Foundation.
             </p>
 
             <div className="about-section">
@@ -137,7 +137,7 @@ const Portfolio = () => {
             <div className="about-section">
               <h3>Current Role</h3>
               <p>
-                Working as a Full-Stack Developer Intern at eGovernments Foundation, where I develop scalable
+                Working as a Full-Stack Developer Intern at eGov Foundation, where I develop scalable
                 applications, optimize RESTful APIs, and enhance user experiences while following Agile methodologies.
               </p>
             </div>
@@ -179,7 +179,7 @@ const Portfolio = () => {
               <span className="tech-tag">Node.js 20</span>
             </div>
             <div className="project-links">
-              <a href="https://github.com/egovernments/DIGIT-Frontend/tree/VersionUpgrade-test5-withPackages" target="_blank" className="project-link">
+              <a href="https://github.com/eGov/DIGIT-Frontend/tree/VersionUpgrade-test5-withPackages" target="_blank" className="project-link">
                 <ExternalLink size={16} /> View Project
               </a>
             </div>
@@ -521,7 +521,7 @@ const Portfolio = () => {
                 </div>
                 <div className="contact-item">
                   <MapPin size={20} />
-                  <span>Buchireddypalem, Nellore, Andhra Pradesh</span>
+                  <span>Bengaluru, Karnataka</span>
                 </div>
               </div>
 
@@ -599,7 +599,7 @@ const Portfolio = () => {
               <h3>Resume Preview</h3>
               <p>
                 Full-Stack Developer with expertise in React.js, Node.js, and Spring Boot.
-                Currently working at eGovernments Foundation with strong academic background
+                Currently working at eGov Foundation with strong academic background
                 from VIT Amaravati.
               </p>
               <div className="resume-highlights">
@@ -607,7 +607,7 @@ const Portfolio = () => {
                   <strong>Education:</strong> B.Tech CSE (8.76 CGPA) - VIT Amaravati
                 </div>
                 <div className="highlight-item">
-                  <strong>Experience:</strong> Full-Stack Developer Intern at eGovernments Foundation
+                  <strong>Experience:</strong> Full-Stack Developer Intern at eGov Foundation
                 </div>
                 <div className="highlight-item">
                   <strong>Skills:</strong> React.js, Node.js, Spring Boot, Python, Java
@@ -641,7 +641,7 @@ const Portfolio = () => {
                 <div className="experience-title-section">
                   <h2 className="experience-role">Full-Stack Developer Intern</h2>
                   <div className="experience-company">
-                    <h3 className="company-name">eGovernments Foundation</h3>
+                    <h3 className="company-name">eGov Foundation</h3>
                     <a
                       href="https://egov.org.in/"
                       target="_blank"
@@ -657,7 +657,7 @@ const Portfolio = () => {
                 <div className="experience-meta">
                   <div className="experience-duration">
                     <Calendar size={16} />
-                    <span>March 2025 - Present</span>
+                    <span>October 2024 - Present</span>
                   </div>
                   <div className="experience-location">
                     <MapPin size={16} />
