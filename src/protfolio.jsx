@@ -80,16 +80,17 @@ const Portfolio = () => {
             </h1>
             <p className="hero-subtitle">Full-Stack Developer & Problem Solver</p>
             <p className="hero-description">
-              Passionate about creating innovative web solutions with React.js, Node.js, and Spring Boot.
-              Currently working as a Full-Stack Developer Intern at eGov Foundation.
+              Passionate about creating innovative web solutions with React.js, Node.js, and Python.
+              Currently working as an Associate Software Engineer at Deltek, building data integrations with Python and Apache Airflow.
             </p>
             <div className="hero-skills">
               <span className="skill-tag">React.js</span>
               <span className="skill-tag">Node.js</span>
               <span className="skill-tag">JavaScript</span>
               <span className="skill-tag">HTML</span>
-              <span className="skill-tag">Data Structures</span>
               <span className="skill-tag">Python</span>
+              <span className="skill-tag">Apache Airflow</span>
+              <span className="skill-tag">Data Structures</span>
             </div>
             <div className="hero-buttons">
               <button className="btn-primary" onClick={() => navigate('projects')}>
@@ -122,14 +123,14 @@ const Portfolio = () => {
           <div className="about-text">
             <p className="about-intro">
               I'm a passionate Full-Stack Developer with expertise in modern web technologies.
-              Currently Working as a Full-Stack Developer Intern at eGov Foundation.
+              Currently working as an Associate Software Engineer at Deltek, specializing in data integrations with Python and Apache Airflow.
             </p>
 
             <div className="about-section">
               <h3>Background</h3>
               <p>
                 I have a strong foundation in both frontend and backend development, with hands-on experience
-                in React.js, Node.js, and Spring Boot. My journey includes solving 500+ LeetCode problems
+                in React.js, Node.js, and Python. My journey includes solving 500+ LeetCode problems
                 and working on real-world projects that impact thousands of users.
               </p>
             </div>
@@ -137,8 +138,10 @@ const Portfolio = () => {
             <div className="about-section">
               <h3>Current Role</h3>
               <p>
-                Working as a Full-Stack Developer Intern at eGov Foundation, where I develop scalable
-                applications, optimize RESTful APIs, and enhance user experiences while following Agile methodologies.
+                Working as an Associate Software Engineer at Deltek (Replicon), where I build data integrations 
+                between Replicon and other systems using Python and Apache Airflow. Previously worked as a 
+                Full-Stack Developer Intern at eGov Foundation, where I upgraded major frontend infrastructure 
+                and enhanced accessibility features.
               </p>
             </div>
 
@@ -151,6 +154,10 @@ const Portfolio = () => {
               <div className="education-item">
                 <h4>Nxtwave Disruptive Technologies</h4>
                 <p>Industry Ready Certification in Full-stack Development • Oct 2021 - 2025</p>
+              </div>
+              <div className="education-item">
+                <h4>Narayana Junior College, Nellore</h4>
+                <p>Intermediate MPC (93.6%) • 2019 - 2021</p>
               </div>
             </div>
           </div>
@@ -170,13 +177,17 @@ const Portfolio = () => {
               <span className="project-type">Enterprise Project</span>
             </div>
             <p className="project-description">
-              Migrated project build system to Webpack-based compiler, upgraded React 17 → 19,
-              Node.js 14 → 20, and implemented React Router v6 with @tanstack/react-query.
+              Upgraded the frontend tech stack from React 17 to React 19, Node.js 14 to 20, and implemented 
+              React Router v6 with @tanstack/react-query. Migrated build system to Webpack, achieving 30% 
+              improvement in bundle size and 25% faster load time. Refactored 150+ components, reducing 
+              UI inconsistency bugs by 35%.
             </p>
             <div className="project-tech">
               <span className="tech-tag">React 19</span>
               <span className="tech-tag">Webpack</span>
               <span className="tech-tag">Node.js 20</span>
+              <span className="tech-tag">React Router v6</span>
+              <span className="tech-tag">@tanstack/react-query</span>
             </div>
             <div className="project-links">
               <a href="https://github.com/eGov/DIGIT-Frontend/tree/VersionUpgrade-test5-withPackages" target="_blank" className="project-link">
@@ -184,6 +195,26 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
+
+          <div className="project-card">
+            <div className="project-header">
+              <h3>Accessibility Enhancement – DIGIT UI Components</h3>
+              <span className="project-type">Enterprise Project</span>
+            </div>
+            <p className="project-description">
+              Contributed to improving web accessibility in DIGIT (monorepo) UI components module. 
+              Implemented ARIA roles, keyboard navigation, and proper tab indexing. Ensured compliance 
+              with WCAG accessibility standards, significantly improving user experience for differently-abled users.
+            </p>
+            <div className="project-tech">
+              <span className="tech-tag">React.js</span>
+              <span className="tech-tag">ARIA</span>
+              <span className="tech-tag">WCAG</span>
+              <span className="tech-tag">Accessibility</span>
+              <span className="tech-tag">JavaScript</span>
+            </div>
+          </div>
+
           <div className="project-card">
             <div className="project-header">
               <h3>NxtWatch Platform</h3>
@@ -192,6 +223,7 @@ const Portfolio = () => {
             <p className="project-description">
               YouTube-inspired application with video categories, search functionality,
               and customizable themes. Features secure authentication and protected routes.
+              Crafted responsive UI with React components and established user authentication through JWT tokens.
             </p>
             <div className="project-tech">
               <span className="tech-tag">React.js</span>
@@ -238,13 +270,14 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
+
           <div className="project-card">
             <div className="project-header">
               <h3>NxtTrendz</h3>
               <span className="project-type">E-Commerce Project</span>
             </div>
             <p className="project-description">
-              Created a E-Commerce website using React with Login, Home, Products, and Product details pages with Filter based search.
+              Created an E-Commerce website using React with Login, Home, Products, and Product details pages with Filter based search.
               Implemented secure authentication with JWT tokens and protected routes.
             </p>
             <div className="project-tech">
@@ -253,7 +286,6 @@ const Portfolio = () => {
               <span className="tech-tag">REST API</span>
               <span className="tech-tag">Cookies</span>
               <span className="tech-tag">React Router</span>
-              <span className="tech-tag">Cookies</span>
               <span className="tech-tag">Express.js</span>
             </div>
             <div className="project-links">
@@ -263,8 +295,6 @@ const Portfolio = () => {
               </a>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -315,6 +345,12 @@ const Portfolio = () => {
             <h3>Backend Development</h3>
             <div className="skills-list">
               <div className="skill-item">
+                <span className="skill-name">Python</span>
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: '90%' }}></div>
+                </div>
+              </div>
+              <div className="skill-item">
                 <span className="skill-name">Node.js</span>
                 <div className="skill-bar">
                   <div className="skill-progress" style={{ width: '85%' }}></div>
@@ -333,15 +369,9 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="skill-item">
-                <span className="skill-name">Python</span>
+                <span className="skill-name">Apache Airflow</span>
                 <div className="skill-bar">
-                  <div className="skill-progress" style={{ width: '90%' }}></div>
-                </div>
-              </div>
-              <div className="skill-item">
-                <span className="skill-name">Java</span>
-                <div className="skill-bar">
-                  <div className="skill-progress" style={{ width: '78%' }}></div>
+                  <div className="skill-progress" style={{ width: '75%' }}></div>
                 </div>
               </div>
             </div>
@@ -598,19 +628,22 @@ const Portfolio = () => {
             <div className="resume-card">
               <h3>Resume Preview</h3>
               <p>
-                Full-Stack Developer with expertise in React.js, Node.js, and Spring Boot.
-                Currently working at eGov Foundation with strong academic background
-                from VIT Amaravati.
+                Full-Stack Developer with expertise in React.js, Node.js and Python.
+                Currently working as Associate Software Engineer at Deltek, building data integrations 
+                with Python and Apache Airflow. Strong academic background from VIT Amaravati.
               </p>
               <div className="resume-highlights">
                 <div className="highlight-item">
                   <strong>Education:</strong> B.Tech CSE (8.76 CGPA) - VIT Amaravati
                 </div>
                 <div className="highlight-item">
-                  <strong>Experience:</strong> Full-Stack Developer Intern at eGov Foundation
+                  <strong>Current Role:</strong> Associate Software Engineer at Deltek
                 </div>
                 <div className="highlight-item">
-                  <strong>Skills:</strong> React.js, Node.js, Spring Boot, Python, Java
+                  <strong>Previous Role:</strong> Full-Stack Developer Intern at eGov Foundation
+                </div>
+                <div className="highlight-item">
+                  <strong>Skills:</strong> React.js, Python, Node.js, Spring Boot, Apache Airflow
                 </div>
                 <div className="highlight-item">
                   <strong>Achievement:</strong> 500+ LeetCode Problems Solved
@@ -625,105 +658,157 @@ const Portfolio = () => {
 
 
   const Experience = () => {
-    const currentDate = new Date();
-    const startDate = new Date('2025-03-01');
-    const monthsDifference = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24 * 30));
-    const duration = monthsDifference < 1 ? 'Present' : `${monthsDifference} months`;
+  return (
+    <div className="experience-page page">
+      <div className="container">
+        <h1 className="page-title">Experience</h1>
 
-    return (
-      <div className="experience-page page">
-        <div className="container">
-          <h1 className="page-title">Experience</h1>
-
-          <div className="experience-timeline">
-            <div className="experience-item">
-              <div className="experience-header">
-                <div className="experience-title-section">
-                  <h2 className="experience-role">Full-Stack Developer Intern</h2>
-                  <div className="experience-company">
-                    <h3 className="company-name">eGov Foundation</h3>
-                    <a
-                      href="https://egov.org.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="company-link"
-                    >
-                      <ExternalLink size={16} />
-                      egov.org.in
-                    </a>
-                  </div>
-                </div>
-
-                <div className="experience-meta">
-                  <div className="experience-duration">
-                    <Calendar size={16} />
-                    <span>October 2024 - Present</span>
-                  </div>
-                  <div className="experience-location">
-                    <MapPin size={16} />
-                    <span>On-Site</span>
-                  </div>
+        <div className="experience-timeline">
+          <div className="experience-item">
+            <div className="experience-header">
+              <div className="experience-title-section">
+                <h2 className="experience-role">Associate Software Engineer</h2>
+                <div className="experience-company">
+                  <h3 className="company-name">Deltek (Replicon)</h3>
+                  <a
+                    href="https://www.replicon.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="company-link"
+                  >
+                    <ExternalLink size={16} />
+                    replicon.com
+                  </a>
                 </div>
               </div>
 
-              <div className="experience-content">
-                <div className="experience-description">
-                  <div className="responsibility-item">
-                    <div className="responsibility-icon">
-                      <Code size={20} />
-                    </div>
-                    <p>Developing full-stack applications using React.js, Node.js, and Spring Boot.</p>
-                  </div>
-
-                  <div className="responsibility-item">
-                    <div className="responsibility-icon">
-                      <Shield size={20} />
-                    </div>
-                    <p>Building and optimizing RESTful APIs with secure authentication.</p>
-                  </div>
-
-                  <div className="responsibility-item">
-                    <div className="responsibility-icon">
-                      <Zap size={20} />
-                    </div>
-                    <p>Added accessibility features to Digit UI components.</p>
-                  </div>
-
-                  <div className="responsibility-item">
-                    <div className="responsibility-icon">
-                      <Users size={20} />
-                    </div>
-                    <p>Following Agile methodologies for efficient development.</p>
-                  </div>
+              <div className="experience-meta">
+                <div className="experience-duration">
+                  <Calendar size={16} />
+                  <span>October 2025 - Present</span>
                 </div>
+                <div className="experience-location">
+                  <MapPin size={16} />
+                  <span>On-Site</span>
+                </div>
+              </div>
+            </div>
 
-                <div className="tech-stack">
-                  <h4>Technologies Used:</h4>
-                  <div className="tech-tags">
-                    <span className="tech-tag">React.js</span>
-                    <span className="tech-tag">JavaScript</span>
-                    <span className="tech-tag">HTML</span>
-                    <span className="tech-tag">RESTful APIs</span>
-                    <span className="tech-tag">Authentication</span>
-                    <span className="tech-tag">Accessibility</span>
-                    <span className="tech-tag">Agile</span>
+            <div className="experience-content">
+              <div className="experience-description">
+                <div className="responsibility-item">
+                  <div className="responsibility-icon">
+                    <Code size={20} />
                   </div>
+                  <p>Building data integrations between Replicon and other systems using Python and Apache Airflow.</p>
+                </div>
+              </div>
+
+              <div className="tech-stack">
+                <h4>Technologies Used:</h4>
+                <div className="tech-tags">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Apache Airflow</span>
+                  <span className="tech-tag">Automation</span>
+                  <span className="tech-tag">Data Integration</span>
+                  <span className="tech-tag">Agile</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="experience-summary">
-            <h2>Professional Summary</h2>
-            <p>
-              Currently gaining hands-on experience in full-stack developments. Working with modern web technologies to build
-              scalable and accessible applications while following industry best practices.
-            </p>
+          <div className="experience-item">
+            <div className="experience-header">
+              <div className="experience-title-section">
+                <h2 className="experience-role">Full-Stack Developer Intern</h2>
+                <div className="experience-company">
+                  <h3 className="company-name">eGov Foundation</h3>
+                  <a
+                    href="https://egov.org.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="company-link"
+                  >
+                    <ExternalLink size={16} />
+                    egov.org.in
+                  </a>
+                </div>
+              </div>
+
+              <div className="experience-meta">
+                <div className="experience-duration">
+                  <Calendar size={16} />
+                  <span>March 2025 - August 2025</span>
+                </div>
+                <div className="experience-location">
+                  <MapPin size={16} />
+                  <span>On-Site</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="experience-content">
+              <div className="experience-description">
+                <div className="responsibility-item">
+                  <div className="responsibility-icon">
+                    <Code size={20} />
+                  </div>
+                  <p>Developed full-stack applications using React.js, Node.js, and Spring Boot.</p>
+                </div>
+
+                <div className="responsibility-item">
+                  <div className="responsibility-icon">
+                    <Shield size={20} />
+                  </div>
+                  <p>Upgraded Digit frontend from React 17 to React 19 and Node.js 14 to 20, improving performance by 30%.</p>
+                </div>
+
+                <div className="responsibility-item">
+                  <div className="responsibility-icon">
+                    <Zap size={20} />
+                  </div>
+                  <p>Added accessibility features to Digit UI components following WCAG standards.</p>
+                </div>
+
+                <div className="responsibility-item">
+                  <div className="responsibility-icon">
+                    <Users size={20} />
+                  </div>
+                  <p>Followed Agile methodologies for efficient development and collaboration.</p>
+                </div>
+              </div>
+
+              <div className="tech-stack">
+                <h4>Technologies Used:</h4>
+                <div className="tech-tags">
+                  <span className="tech-tag">React.js</span>
+                  <span className="tech-tag">Node.js</span>
+                  <span className="tech-tag">Spring Boot</span>
+                  <span className="tech-tag">Webpack</span>
+                  <span className="tech-tag">JavaScript</span>
+                  <span className="tech-tag">RESTful APIs</span>
+                  <span className="tech-tag">Accessibility</span>
+                  <span className="tech-tag">Agile</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div className="experience-summary">
+          <h2>Professional Summary</h2>
+          <p>
+            Currently working as an Associate Software Engineer at Deltek (Replicon), building data integrations using Python and Apache Airflow. 
+            Previously gained hands-on experience as a Full-Stack Developer Intern at eGov Foundation, where I successfully upgraded major frontend 
+            infrastructure and enhanced accessibility features. Dedicated to delivering scalable and efficient solutions following Agile methodologies 
+            and modern engineering practices.
+          </p>
+        </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
+
 
 
 
