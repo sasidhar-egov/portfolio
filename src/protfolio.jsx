@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Calendar, ExternalLink, Code, Shield, Users, Zap,ChevronRight, Download, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 import MyImage from "./assets/WhatsApp Image 2025-07-05 at 11.53.39_8f9030ea.jpg";
-import resume from "./assets/resume_final.pdf"
+import resume from "./assets/resume.final.pdf"
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
